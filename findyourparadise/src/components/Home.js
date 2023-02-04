@@ -7,10 +7,7 @@ function Home() {
             <div className="description"><p>TAKE A SHORT QUIZ AND FIND YOUR HOME AWAY FROM HOME.</p></div>
             <div className="button">
                 <button>TAKE THE QUIZ</button>
-            </div>
-        </div>
-
-        <h1>Home page for find your paradise</h1>
+            </div>       
        </div>
     );
 }
