@@ -9,6 +9,7 @@ import Results from './components/Results';
 function App() {
   return (
     <>
+
       <Router>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
