@@ -8,6 +8,7 @@ import Quiz from './components/Quiz';
 function App() {
   return (
     <>
+
       <Router>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
