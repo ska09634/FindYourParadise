@@ -39,7 +39,7 @@ function Quiz() {
 
         <div className="rec">
             <form>
-                <label>Question 1: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
+                <label>Question 1: What speaks to you more? Nature, Beaches, Amusement Parks, Museums, or Sports?</label>
                     <select value={selects} onChange={e=>setSelects(e.target.value)}>
                         <option value="nature">Nature</option>
                         <option value="beaches">Beaches</option>
@@ -48,31 +48,18 @@ function Quiz() {
                         <option value="sports">Sports</option>
                     </select>
 
-                    <label>Question 2: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
+                    <label>Question 2: Are you traveling with children?</label>
                     <select value={selects} onChange={e=>setSelects(e.target.value)}>
-                        <option value="nature">Nature</option>
-                        <option value="beaches">Beaches</option>
-                        <option value="aparks">Amusement Parks</option>
-                        <option value="museums">Museums</option>
-                        <option value="sports">Sports</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                        <option value="not sure">not sure</option>
                     </select>
 
-                    <label>Question 3: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
+                    <label>Question 3: Where are you located? How far are you traveling?</label>
                     <select value={selects} onChange={e=>setSelects(e.target.value)}>
-                        <option value="nature">Nature</option>
-                        <option value="beaches">Beaches</option>
-                        <option value="aparks">Amusement Parks</option>
-                        <option value="museums">Museums</option>
-                        <option value="sports">Sports</option>
-                    </select>
-
-                    <label>Question 4: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
-                    <select value={selects} onChange={e=>setSelects(e.target.value)}>
-                        <option value="nature">Nature</option>
-                        <option value="beaches">Beaches</option>
-                        <option value="aparks">Amusement Parks</option>
-                        <option value="museums">Museums</option>
-                        <option value="sports">Sports</option>
+                        <option value="1000m-4999m">1000m-4999m</option>
+                        <option value="5000m-9999m">5000m-9999m</option>
+                        <option value="10000m-15000m">10000m-15000m</option>
                     </select>
             </form>
 

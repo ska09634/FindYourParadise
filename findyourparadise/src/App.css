@@ -13,3 +13,8 @@
 .description {
   color: #F9BACB;
 }
+
+.results {
+  text-align: center;
+  list-style: none;
+}
