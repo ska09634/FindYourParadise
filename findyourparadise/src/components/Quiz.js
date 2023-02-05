@@ -3,7 +3,7 @@ import './Quiz.css';
 
 function Quiz() {
     return (
-        <>
+      
         <div className= "container-horizontal">
  
  
@@ -16,13 +16,9 @@ function Quiz() {
         <p>Question 2</p>
         </div>
         </body>
-<<<<<<< HEAD
         
-=======
-       
->>>>>>> a973f240fbfe587634d5f53705e75ff9542e6c21
         </div>
-        </>
+      
     );
  }
  
