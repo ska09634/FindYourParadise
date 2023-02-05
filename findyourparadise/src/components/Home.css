@@ -7,7 +7,7 @@
     justify-content: center;
     left:-30px;
     margin-right: 400px;
-    margin-top: -50px;
+    margin-top: -40px;
 }
 
 .banner {
@@ -27,6 +27,7 @@
     font-style: normal;
     font-size: 50px;
     left:-30px;
+    margin-top: -40px;
     margin-right: 500px;
     display: flex;
     align-items: center;
