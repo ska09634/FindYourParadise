@@ -1,6 +1,7 @@
+import React from "react";
 function Results() {
     return (
-        <h1>Results page for find your paradise</h1>
+        <h1>RESULTS</h1>
     );
 }
 

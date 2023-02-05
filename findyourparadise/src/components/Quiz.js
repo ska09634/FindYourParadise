@@ -4,6 +4,7 @@ import './Quiz.css';
 function Quiz() {
     return (
         <>
+<<<<<<< HEAD
         <div className= "container-horizontal">
 
         
@@ -16,6 +17,10 @@ function Quiz() {
         </div>
         </body>
         
+=======
+        <div>
+        <h1>QUIZ</h1>
+>>>>>>> e8ef7896afe1874d0d6230286c53136054775ec8
         </div>
         </>
     );
