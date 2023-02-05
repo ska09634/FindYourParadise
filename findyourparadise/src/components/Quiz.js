@@ -13,7 +13,7 @@ function Quiz() {
 
     let navigate = useNavigate();
     function handleClick() {
-        navigate('/Quiz')
+        navigate('/Results')
     }
 
     const options = {
@@ -77,7 +77,7 @@ function Quiz() {
             </form>
 
             <div className="buttonform">
-                <button onClick={handleClick}>SHOW ME MY NEW HOME!</button>
+                <button onClick={handleClick}>SHOW ME MY RESULTS!</button>
             </div>
 
         </div>
