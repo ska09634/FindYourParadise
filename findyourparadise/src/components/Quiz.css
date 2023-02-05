@@ -68,3 +68,23 @@ top: 40px;
 .Quiz + p{
     color:aquamarine;
 }
+
+/* ------------------------------------------
+Quiz form
+------------------------------------------ */
+
+.rec {
+    text-align: center;
+}
+
+.rec label {
+    text-align: left;
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.rec select {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
