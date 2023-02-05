@@ -1,5 +1,6 @@
 import React from "react";
 import './Quiz.css';
+import Axios from "axios";
 import {useState} from "react";
 import leftIMG from '../images/QuizLeft.png';
 import rightIMG from '../images/QuizRight.png'
@@ -11,10 +12,32 @@ console.log(leftIMG);
 function Quiz() {
     const [selects, setSelects]=useState();
 
-    let navigate = useNavigate();
-    function handleClick() {
-        navigate('/Results')
+    const url = "https://opentripmap-places-v1.p.rapidapi.com/en/places/radius?radius=200000&lon=-121.4944&lat=38.58157&kinds=beaches&rate=2"; 
+    const [data, setData] = useState({
+        place: ""
+    })
+
+    function submit(e) {
+        e.preventDefault(); 
+        Axios.post(url, {
+            place: data.place
+        })
+        .the(res=>{
+            console.log(res.data)
+        })
     }
+
+    function handle(e) {
+        const newdata={...data}
+        newdata[e.target.id] = e.target.value
+        setData(newdata)
+        console.log(newdata)
+    }
+
+    let navigate = useNavigate();
+    // function handleClick() {
+    //     navigate('/Results')
+    // }
 
     const options = {
         method: 'GET',
@@ -23,11 +46,18 @@ function Quiz() {
           'X-RapidAPI-Host': 'opentripmap-places-v1.p.rapidapi.com'
         }
       };
-      
-      fetch('https://opentripmap-places-v1.p.rapidapi.com/en/places/radius?radius=200000&lon=-121.4944&lat=38.58157&kinds=beaches&rate=2', options)
+
+      const handleClick = () => {
+        console.log("handle the submit");
+        fetch('https://opentripmap-places-v1.p.rapidapi.com/en/places/radius?radius=200000&lon=-121.4944&lat=38.58157&kinds=beaches&rate=2', options)
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
+        navigate('/Results')
+        console.log("after...");
+      }
+      
+  
     
     return(
       
@@ -61,11 +91,16 @@ function Quiz() {
                         <option value="5000m-9999m">5000m-9999m</option>
                         <option value="10000m-15000m">10000m-15000m</option>
                     </select>
-            </form>
 
-            <div className="buttonform">
+                    <div className="buttonform">
                 <button onClick={handleClick}>SHOW ME MY RESULTS!</button>
             </div>
+            </form>
+
+           <div class="result-box"> 
+           
+           
+           </div>
 
         </div>
         </body>
