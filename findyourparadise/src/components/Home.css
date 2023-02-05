@@ -5,9 +5,10 @@
     position: absolute;
     align-items: center;
     justify-content: center;
-    left:200px;
+    left:-30px;
+    margin-right: 400px;
+    margin-top: -50px;
 }
-
 
 .banner {
     padding: 50px;
@@ -25,6 +26,8 @@
     font-family: 'Tangerine';
     font-style: normal;
     font-size: 50px;
+    left:-30px;
+    margin-right: 500px;
     display: flex;
     align-items: center;
     text-align: center;
