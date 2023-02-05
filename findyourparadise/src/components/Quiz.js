@@ -3,12 +3,18 @@ import './Quiz.css';
 import {useState} from "react";
 import leftIMG from '../images/QuizLeft.png';
 import rightIMG from '../images/QuizRight.png'
+import { useNavigate } from 'react-router-dom'
 
 
 console.log(leftIMG);
 
 function Quiz() {
     const [selects, setSelects]=useState();
+
+    let navigate = useNavigate();
+    function handleClick() {
+        navigate('/Quiz')
+    }
 
     const options = {
         method: 'GET',
@@ -27,13 +33,12 @@ function Quiz() {
       
         <body className="background">
             <img className="picLeft" src={leftIMG} alt="travel icon"/>
-            <h1>Quiz </h1>
+            <h1>QUIZ</h1>
             <img className="picRight" src={rightIMG} alt="house icon"/>
 
 
         <div className="rec">
             <form>
-                    
                 <label>Question 1: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
                     <select value={selects} onChange={e=>setSelects(e.target.value)}>
                         <option value="nature">Nature</option>
@@ -42,7 +47,38 @@ function Quiz() {
                         <option value="museums">Museums</option>
                         <option value="sports">Sports</option>
                     </select>
+
+                    <label>Question 2: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
+                    <select value={selects} onChange={e=>setSelects(e.target.value)}>
+                        <option value="nature">Nature</option>
+                        <option value="beaches">Beaches</option>
+                        <option value="aparks">Amusement Parks</option>
+                        <option value="museums">Museums</option>
+                        <option value="sports">Sports</option>
+                    </select>
+
+                    <label>Question 3: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
+                    <select value={selects} onChange={e=>setSelects(e.target.value)}>
+                        <option value="nature">Nature</option>
+                        <option value="beaches">Beaches</option>
+                        <option value="aparks">Amusement Parks</option>
+                        <option value="museums">Museums</option>
+                        <option value="sports">Sports</option>
+                    </select>
+
+                    <label>Question 4: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
+                    <select value={selects} onChange={e=>setSelects(e.target.value)}>
+                        <option value="nature">Nature</option>
+                        <option value="beaches">Beaches</option>
+                        <option value="aparks">Amusement Parks</option>
+                        <option value="museums">Museums</option>
+                        <option value="sports">Sports</option>
+                    </select>
             </form>
+
+            <div className="buttonform">
+                <button onClick={handleClick}>SHOW ME MY NEW HOME!</button>
+            </div>
 
         </div>
         </body>
