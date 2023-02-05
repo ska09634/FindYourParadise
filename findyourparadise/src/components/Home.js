@@ -9,12 +9,13 @@ function Home() {
 
     return (
         <div>
-            <div className="header"><h1>FIND YOUR</h1></div>
-            <div className="paradise"><h1>Paradise</h1></div>
-            <div class="img_header"><img src="images/PalmTrees.png"  alt="palm trees"></img></div>
+            <div className="banner">
+                <div className="find"><b><h1>FIND YOUR</h1></b></div>
+                <div className="paradise"><h1>Paradise</h1></div>
+            </div>
             <div className="description"><p>TAKE A SHORT QUIZ AND FIND YOUR HOME AWAY FROM HOME.</p></div>
             <div className="button">
-                <button onClick={handleClick}>Quiz</button>
+                <button onClick={handleClick}>TAKE THE QUIZ</button>
             </div> 
          </div>       
     );
