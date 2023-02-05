@@ -14,9 +14,24 @@ function Quiz() {
             <h1>Quiz </h1>
             <img className="picRight" src={rightIMG} alt="house icon"/>
         <div className="rec">
-        <p>Question 1 </p>
-        <br></br>
-        <p>Question 2</p>
+
+        
+            <form>
+                    
+                <label>Question 1: What speaks to you more? Nature, Beaches, Amusement Parks, Museusm, or Sports?</label>
+                    <select>
+                        <option value="mario">mario</option>
+                        <option value="yoshi">yoshi</option>
+                    </select>
+                    <select>
+                        <option value="nature">Nature</option>
+                        <option value="beaches">Beaches</option>
+                        <option value="aparks">Amusement Parks</option>
+                        <option value="museums">Museums</option>
+                        <option value="sports">Sports</option>
+                    </select>
+            </form>
+
         </div>
         </body>
         
