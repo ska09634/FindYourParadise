@@ -1,4 +1,48 @@
-#Quiz{
+.background{
+    align-items: flex-start;
     background-color: #FFC7D6 ;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 982px;
+    padding: 0 70px;
+    width: 1512px;
 }
 
+h1{
+    font-family: 'Biryani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 154px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.rec{
+    background-color: white;
+    border-radius: 31px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    width: 1371px;
+    height: 710px;
+    left: 70px;
+    top: 272px;
+
+}
+
+.container-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.Quiz + p{
+    color:aquamarine;
+}
