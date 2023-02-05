@@ -5,9 +5,10 @@ function Quiz() {
     return (
         <>
         <div className= "container-horizontal">
-
-        
-        <body className="background"> 
+ 
+ 
+       
+        <body className="background">
         <h1>Quiz </h1>
         <div className="rec">
         <p>Question 1 </p>
@@ -15,10 +16,15 @@ function Quiz() {
         <p>Question 2</p>
         </div>
         </body>
+<<<<<<< HEAD
         
+=======
+       
+>>>>>>> a973f240fbfe587634d5f53705e75ff9542e6c21
         </div>
         </>
     );
-}
+ }
+ 
 
 export default Quiz;
