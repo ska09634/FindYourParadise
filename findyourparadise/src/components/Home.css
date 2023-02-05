@@ -12,7 +12,7 @@
 
 .banner {
     padding: 50px;
-    background-image:url("images/PalmTrees.png"); 
+    background-image:url("../images/PalmTrees.png"); 
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
