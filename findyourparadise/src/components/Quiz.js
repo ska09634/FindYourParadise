@@ -4,9 +4,18 @@ import './Quiz.css';
 function Quiz() {
     return (
         <>
-        <div id='Quiz'>
-        <h1>Quiz page for find your paradise</h1>
-        <p>Question 1</p>
+        <div className= "container-horizontal">
+
+        
+        <body className="background"> 
+        <h1>Quiz </h1>
+        <div className="rec">
+        <p>Question 1 </p>
+        <br></br>
+        <p>Question 2</p>
+        </div>
+        </body>
+        
         </div>
         </>
     );
